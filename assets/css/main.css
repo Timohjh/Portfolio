@@ -71,6 +71,22 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+.outlined-button {
+    background-color: #000 !important;
+    border: 1px solid #000000 !important; /* You can change the outline color to your preference */
+    padding: 1px 3px !important; /* Adjust padding as needed */
+    margin: 1px !important; /* Adjust margin as needed */
+    text-decoration: none !important;
+    color: #000 !important; /* You can change the text color to match the outline color */
+    border-radius: 3px; /* Add rounded corners if desired */
+    transition: background-color 0.3s ease-in-out !important;
+	font-size: 17px !important;
+}
+
+.outlined-button:hover {
+    background-color: #006599 !important; /* Change the background color on hover */
+    color: #000 !important; /* Change text color on hover */
+}
 
 /* Basic */
 
@@ -151,7 +167,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #3e3e3e;
-		margin: 0 0 0.75em 0;
+		margin: 0 0 0.5em 0;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
