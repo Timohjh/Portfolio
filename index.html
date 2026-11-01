@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/portfolio.css" />
+  <link rel="stylesheet" href="assets/css/portfolio-v2.css" />
 </head>
 
 <body>
@@ -40,7 +40,7 @@
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> Berlin-based Unity developer</p>
+          <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> From Finland · Based in Berlin</p>
           <h1 id="hero-title">Unity developer<br /><em>for games &amp;&nbsp;VR.</em></h1>
           <p class="hero-lede">I take C# gameplay and XR systems from prototype to release, with hands-on experience in performance, multiplayer, and production VR on real hardware.</p>
           <div class="hero-actions">
@@ -50,29 +50,21 @@
           <div class="hero-facts" aria-label="Experience at a glance">
             <div><strong>5 years</strong><span>Unity development</span></div>
             <div><strong>30+</strong><span>projects and productions</span></div>
-            <div><strong>Quest + PC</strong><span>VR platforms</span></div>
+            <div><strong>Android + PC</strong><span>platforms</span></div>
           </div>
         </div>
 
-        <div class="hero-gallery" aria-label="Screenshots from selected projects">
-          <figure class="hero-gallery-main">
-            <img src="images/AUTOMAT-cover.jpg" alt="Cinematic scene from the VR project Automat" fetchpriority="high" />
-            <figcaption>Automat <span>Unity VR development</span></figcaption>
-          </figure>
-          <figure>
-            <img src="images/Truefilm-cover.jpg" alt="VR scene from The True Film" />
-            <figcaption>The True Film</figcaption>
-          </figure>
-          <figure>
-            <img src="images/Memphis-cover.jpg" alt="Artwork for The Memphis Chronicles" />
-            <figcaption>The Memphis Chronicles</figcaption>
-          </figure>
+        <div class="hero-gallery hero-carousel" aria-label="Selected project images">
+          <figure class="hero-slide is-active" aria-hidden="false"><img src="images/Memphis-cover.jpg" alt="Artwork for The Memphis Chronicles" fetchpriority="high" /><figcaption>The Memphis Chronicles</figcaption></figure>
+          <figure class="hero-slide" aria-hidden="true"><img src="images/LePalais.png" alt="Virtual environment from Le Palais" /><figcaption>Le Palais</figcaption></figure>
+          <figure class="hero-slide" aria-hidden="true"><img src="images/Truefilm-cover.jpg" alt="VR scene from The True Film" /><figcaption>The True Film</figcaption></figure>
+          <figure class="hero-slide" aria-hidden="true"><img src="images/BodyCount.jpg" alt="Apartment scene from Body Count" /><figcaption>Body Count</figcaption></figure>
+          <button class="carousel-toggle" type="button" aria-label="Pause image slideshow">Pause</button>
         </div>
       </div>
       <div class="container hero-award">
         <span class="award-label">Recognized work</span>
         <p>Led Unity development of <strong>The True Film</strong>, winner of Best User Experience at the 2025 European XR Awards.</p>
-        <a href="https://xrawards.aixr.org/winners-and-finalists-2025/" target="_blank" rel="noopener noreferrer" aria-label="View the 2025 European XR Awards winners">View award <span aria-hidden="true">↗</span></a>
       </div>
     </section>
 
@@ -80,24 +72,20 @@
       <div class="container">
         <div class="section-heading">
           <div>
-            <p class="section-kicker">01 / Selected work</p>
-            <h2 id="work-title">Projects with real technical ownership.</h2>
+            <p class="section-kicker">Selected work</p>
+            <h2 id="work-title">From award-winning VR to gameplay systems and demanding media pipelines, here are some projects I've worked on.</h2>
           </div>
-          <p>From award-winning VR to gameplay systems and demanding media pipelines, these projects show how I work in Unity.</p>
         </div>
 
         <div class="featured-grid">
           <article class="feature-card feature-card-lead">
-            <div class="feature-image"><img src="images/Truefilm-cover.jpg" alt="A player examining objects in The True Film VR experience" loading="lazy" /></div>
+            <div class="feature-image"><img src="images/Memphis-cover.jpg" alt="Artwork for The Memphis Chronicles" loading="lazy" /></div>
             <div class="feature-content">
-              <p class="project-overline">VR experience <span>2025</span></p>
-              <h3>The True Film</h3>
-              <p>Led Unity development across interactions, UX implementation, performance, and production integration. The experience won Best User Experience at the 2025 European XR Awards.</p>
-              <ul class="project-detail" aria-label="Contributions"><li>Lead Unity development</li><li>UX and interaction systems</li><li>Performance and integration</li></ul>
-              <div class="project-actions">
-                <a href="https://thetruefilm.ch/en/" target="_blank" rel="noopener noreferrer">Explore project <span aria-hidden="true">↗</span></a>
-                <a href="https://xrawards.aixr.org/winners-and-finalists-2025/" target="_blank" rel="noopener noreferrer">Award details <span aria-hidden="true">↗</span></a>
-              </div>
+              <p class="project-overline">Unity game <span>In development</span></p>
+              <h3>The Memphis Chronicles</h3>
+              <p>Implemented gameplay systems and production mechanics within a larger game framework, covering feature integration and gameplay refinement. A demo is available on Steam.</p>
+              <ul class="project-detail" aria-label="Contributions"><li>Gameplay systems</li><li>Feature integration</li><li>Steam demo available</li></ul>
+              <div class="project-actions"><a href="https://store.steampowered.com/app/4153570/The_Memphis_Chronicles/" target="_blank" rel="noopener noreferrer">View demo on Steam <span aria-hidden="true">↗</span></a></div>
             </div>
           </article>
 
@@ -106,18 +94,28 @@
             <div class="feature-content">
               <p class="project-overline">Quest installation <span>2024</span></p>
               <h3>Le Palais</h3>
-              <p>Took over Unity implementation for a Quest 2/3 installation. I integrated volumetric footage, optimized playback, and resolved plugin issues in an existing codebase.</p>
-              <div class="project-actions"><a href="https://le-palais-animaviva.squarespace.com/" target="_blank" rel="noopener noreferrer">Explore project <span aria-hidden="true">↗</span></a></div>
+              <p>Took over Unity implementation for a Quest 2/3 experience, integrating volumetric footage, optimizing playback, and resolving plugin issues. Coming soon to the Meta Store.</p>
+              <div class="project-actions"><a href="https://le-palais-animaviva.squarespace.com/" target="_blank" rel="noopener noreferrer">Explore project <span aria-hidden="true">↗</span></a><a href="https://villa-albertine.org/va/professionals/the-palace/" target="_blank" rel="noopener noreferrer">Read about the project <span aria-hidden="true">↗</span></a></div>
             </div>
           </article>
 
           <article class="feature-card">
-            <div class="feature-image"><img src="images/Memphis-cover.jpg" alt="Artwork for The Memphis Chronicles" loading="lazy" /></div>
+            <div class="feature-image"><img src="images/Truefilm-cover.jpg" alt="A player examining objects in The True Film VR experience" loading="lazy" /></div>
             <div class="feature-content">
-              <p class="project-overline">Unity game <span>In development</span></p>
-              <h3>The Memphis Chronicles</h3>
-              <p>Implemented gameplay systems and production mechanics within a larger game framework, covering feature integration and gameplay refinement. A public Steam demo is available.</p>
-              <div class="project-actions"><a href="https://store.steampowered.com/app/4153570/The_Memphis_Chronicles/" target="_blank" rel="noopener noreferrer">View on Steam <span aria-hidden="true">↗</span></a></div>
+              <p class="project-overline">VR experience <span>2025</span></p>
+              <h3>The True Film</h3>
+              <p>Led Unity development across interactions, UX implementation, performance, and production integration. The experience won Best User Experience at the 2025 European XR Awards.</p>
+              <div class="project-actions"><a href="https://thetruefilm.ch/en/" target="_blank" rel="noopener noreferrer">Explore project <span aria-hidden="true">↗</span></a><a href="https://xrawards.aixr.org/winners-and-finalists-2025/" target="_blank" rel="noopener noreferrer">Award details <span aria-hidden="true">↗</span></a></div>
+            </div>
+          </article>
+
+          <article class="feature-card feature-card-wide">
+            <div class="feature-image"><img src="images/BodyCount.jpg" alt="Apartment scene from Body Count" loading="lazy" /></div>
+            <div class="feature-content">
+              <p class="project-overline">VR documentary <span>2026</span></p>
+              <h3>Body Count</h3>
+              <p>Handled all Unity development for this 2026 selection in the IDFA DocLab Competition for Immersive Non-Fiction.</p>
+              <div class="project-actions"><a href="https://festival.idfa.nl/en/film/21fcd60e-ea3f-4e5c-b6aa-a540898ef2fe/body-count/" target="_blank" rel="noopener noreferrer">View IDFA project <span aria-hidden="true">↗</span></a><a href="https://www.youtube.com/watch?v=J84cuyyqA-I" target="_blank" rel="noopener noreferrer">Watch trailer <span aria-hidden="true">↗</span></a></div>
             </div>
           </article>
         </div>
@@ -127,13 +125,12 @@
           <span>Selected credits and contributions</span>
         </div>
         <div class="more-work-grid">
-          <article class="more-work-card"><span class="more-work-number">01</span><div><h4>Being Gregor</h4><p>Credited as a developer and animation contributor on a 2026 VR production.</p><a href="https://www.filmfestival.nl/en/film/being-gregor" target="_blank" rel="noopener noreferrer">Festival credit <span aria-hidden="true">↗</span></a></div></article>
-          <article class="more-work-card"><span class="more-work-number">02</span><div><h4>Eva Umlauf - Her Testimony</h4><p>Adapted a volumetric VR story for production; investigated plugin memory use and optimized assets.</p><a href="https://www.hhi.fraunhofer.de/en/virtual-reality-experience-eva-umlauf-her-testimony.html" target="_blank" rel="noopener noreferrer">Fraunhofer project <span aria-hidden="true">↗</span></a></div></article>
-          <article class="more-work-card"><span class="more-work-number">03</span><div><h4>Quest 360 releases</h4><p>Ported 360 video experiences to standalone Quest and built protected media playback.</p><a href="https://www.meta.com/en-gb/experiences/african-space-makers/8017594008339275/" target="_blank" rel="noopener noreferrer">View an example <span aria-hidden="true">↗</span></a></div></article>
-          <article class="more-work-card"><span class="more-work-number">04</span><div><h4>Automat</h4><p>Led Unity implementation and integrated the core systems of a narrative VR experience.</p><a href="https://christophrohrscheidt.de/AUTOMAT" target="_blank" rel="noopener noreferrer">Explore project <span aria-hidden="true">↗</span></a></div></article>
-          <article class="more-work-card"><span class="more-work-number">05</span><div><h4>DO-X</h4><p>Worked on Quest 3 terrain streaming, environment setup, and flight simulation controls.</p><a href="https://invr.space/portfolio-item/do-x/" target="_blank" rel="noopener noreferrer">Explore project <span aria-hidden="true">↗</span></a></div></article>
-          <article class="more-work-card"><span class="more-work-number">06</span><div><h4>MIFF XR 2022</h4><p>Stabilized an XR festival app, including launchers, 360 video booths, and large-media workflows.</p><a href="https://miff.com.au/xr" target="_blank" rel="noopener noreferrer">Festival project <span aria-hidden="true">↗</span></a></div></article>
-          <article class="more-work-card"><span class="more-work-number">07</span><div><h4>DDS VR</h4><p>Ported a dance project to VR and iterated on interactions with partner feedback.</p><a href="https://dl.acm.org/doi/10.1145/3588027.3595602" target="_blank" rel="noopener noreferrer">Research paper <span aria-hidden="true">↗</span></a></div></article>
+          <article class="more-work-card"><h4>Eva Umlauf - Her Testimony</h4><p>Adapted a volumetric VR story for production; investigated plugin memory use and optimized assets.</p><a href="https://www.hhi.fraunhofer.de/en/virtual-reality-experience-eva-umlauf-her-testimony.html" target="_blank" rel="noopener noreferrer">Fraunhofer project <span aria-hidden="true">↗</span></a></article>
+          <article class="more-work-card"><h4>360 video projects</h4><p>Ported three 360 video experiences to standalone Quest and built protected media playback.</p><div class="more-work-links"><a href="https://www.meta.com/en-gb/experiences/african-space-makers/8017594008339275/" target="_blank" rel="noopener noreferrer">African Space Makers ↗</a><a href="https://www.meta.com/en-gb/experiences/rhizomat/24239257029007458/" target="_blank" rel="noopener noreferrer">Rhizomat ↗</a><a href="https://www.meta.com/en-gb/experiences/afroroutes/4201468923247485/" target="_blank" rel="noopener noreferrer">AfroRoutes ↗</a></div></article>
+          <article class="more-work-card"><h4>Automat</h4><p>Led Unity implementation and integrated the core systems of a narrative VR experience.</p><a href="https://christophrohrscheidt.de/AUTOMAT" target="_blank" rel="noopener noreferrer">Explore project <span aria-hidden="true">↗</span></a></article>
+          <article class="more-work-card"><h4>DO-X</h4><p>Worked on Quest 3 terrain streaming, environment setup, and flight simulation controls.</p><a href="https://invr.space/portfolio-item/do-x/" target="_blank" rel="noopener noreferrer">Explore project <span aria-hidden="true">↗</span></a></article>
+          <article class="more-work-card"><h4>MIFF XR 2022</h4><p>Stabilized an XR festival app, including launchers, 360 video booths, and large-media workflows.</p><a href="https://miff.com.au/xr" target="_blank" rel="noopener noreferrer">Festival project <span aria-hidden="true">↗</span></a></article>
+          <article class="more-work-card"><h4>DDS VR</h4><p>Ported a dance project to VR and iterated on interactions with partner feedback.</p><a href="https://dl.acm.org/doi/10.1145/3588027.3595602" target="_blank" rel="noopener noreferrer">Research paper <span aria-hidden="true">↗</span></a></article>
         </div>
         <div class="early-work"><span>Earlier games and experiments</span><a href="https://github.com/Timohjh/ZombieGame" target="_blank" rel="noopener noreferrer">Zombie Game ↗</a><a href="https://timoheikkilae.itch.io/target-practice-game" target="_blank" rel="noopener noreferrer">Target Practice Game ↗</a><a href="https://dungeongame1.itch.io/dungeon-game" target="_blank" rel="noopener noreferrer">Dungeon Game ↗</a></div>
       </div>
@@ -142,13 +139,12 @@
     <section class="section expertise-section" id="expertise" aria-labelledby="expertise-title">
       <div class="container">
         <div class="section-heading">
-          <div><p class="section-kicker">02 / Expertise</p><h2 id="expertise-title">The engineering behind the experience.</h2></div>
-          <p>My work spans gameplay, XR delivery, optimization, and media integration. I’m comfortable joining an existing codebase or taking ownership of a feature from the start.</p>
+          <div><p class="section-kicker">Expertise</p><h2 id="expertise-title">The engineering behind the experience.</h2></div>
         </div>
         <div class="expertise-grid">
-          <article class="expertise-card"><span class="expertise-number">01 / Systems</span><h3>Gameplay &amp; C#</h3><p>Gameplay mechanics, UI, locomotion, multiplayer features, and practical code architecture for Unity production.</p></article>
-          <article class="expertise-card"><span class="expertise-number">02 / Hardware</span><h3>VR &amp; performance</h3><p>Quest and PC VR development, runtime profiling, headset testing, and optimization for standalone constraints.</p></article>
-          <article class="expertise-card"><span class="expertise-number">03 / Pipeline</span><h3>Media &amp; integration</h3><p>Volumetric video, 3D scan assets, third-party plugins, protected playback, and production debugging.</p></article>
+          <article class="expertise-card"><span class="expertise-number">Systems</span><h3>Gameplay &amp; C#</h3><p>Gameplay mechanics, UI, locomotion, multiplayer features, and practical code architecture for Unity production.</p></article>
+          <article class="expertise-card"><span class="expertise-number">Hardware</span><h3>VR &amp; performance</h3><p>Quest and PC VR development, runtime profiling, headset testing, and optimization for standalone constraints.</p></article>
+          <article class="expertise-card"><span class="expertise-number">Pipeline</span><h3>Media &amp; integration</h3><p>Volumetric video, 3D scan assets, third-party plugins, protected playback, and production debugging.</p></article>
         </div>
         <div class="tool-stack" aria-label="Technical toolkit">
           <div><strong>Core stack</strong><p>Unity, C#, URP, OpenXR, XR Interaction Toolkit, Netcode for GameObjects</p></div>
@@ -161,7 +157,7 @@
 
     <section class="section experience-section" id="experience" aria-labelledby="experience-title">
       <div class="container experience-layout">
-        <div class="experience-intro"><p class="section-kicker">03 / Experience</p><h2 id="experience-title">Five years of Unity work, from prototype to production.</h2><p>Berlin-based, with hands-on delivery across games, narrative VR, standalone headsets, and PC VR.</p></div>
+        <div class="experience-intro"><p class="section-kicker">Experience</p><h2 id="experience-title">Five years of Unity work, from prototype to production.</h2><p>Originally from Finland and now based in Berlin, I work across games, narrative VR, standalone headsets, and PC VR.</p></div>
         <div class="timeline">
           <article class="timeline-item"><div class="timeline-meta"><span>Jul 2022 - Present</span><span>Berlin, Germany</span></div><h3>Unity VR Developer <span>INVR.SPACE GmbH</span></h3><ul><li>Develop Unity/C# VR applications and games across Meta Quest and PC VR, from early prototypes through device testing and delivery.</li><li>Implement gameplay, interaction, UI, locomotion, and multiplayer systems; profile and optimize runtime performance.</li><li>Integrate volumetric media, debug plugins and memory issues, and adapt complex projects for standalone hardware.</li></ul></article>
           <article class="timeline-item"><div class="timeline-meta"><span>Oct 2021 - Mar 2022</span><span>Helsinki, Finland</span></div><h3>Unity VR Developer <span>Triple Take Games · Internship</span></h3><ul><li>Developed a multiplayer VR game with minigames and player-focused mechanics.</li><li>Refined VR comfort, refactored Unity/C# code, and built internal utilities to improve iteration.</li></ul></article>
@@ -172,13 +168,38 @@
 
     <section class="section contact-section" id="contact" aria-labelledby="contact-title">
       <div class="container contact-panel">
-        <div><p class="section-kicker">04 / Contact</p><h2 id="contact-title">Looking for a Unity developer?</h2><p>I’m based in Berlin and interested in games and VR work where strong C# implementation, performance, and production ownership matter.</p></div>
-        <div class="contact-actions"><a class="button button-dark" href="mailto:timo.heikkila@hotmail.com">Get in touch <span aria-hidden="true">↗</span></a><a class="contact-resume" href="Timo_Heikkila_Resume.pdf" download>Download résumé <span aria-hidden="true">↓</span></a><span>timo.heikkila@hotmail.com</span></div>
+        <div><p class="section-kicker">Contact</p><h2 id="contact-title">Let's connect.</h2><p>I'm open to Unity development opportunities in games and VR. Reach out to talk about a role, a project, or my work.</p></div>
+        <div class="contact-actions"><a class="button button-dark" href="mailto:timo.heikkila@hotmail.com">Email me <span aria-hidden="true">↗</span></a><a class="contact-resume" href="Timo_Heikkila_Resume.pdf" download>Download résumé <span aria-hidden="true">↓</span></a><div class="contact-social"><a href="https://www.linkedin.com/in/timohjheikkila/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="https://github.com/Timohjh" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="tel:+358404198081">+358 40 419 8081</a></div><span>timo.heikkila@hotmail.com</span></div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer"><div class="container footer-inner"><span>© 2026 Timo Heikkilä</span><div><a href="https://www.linkedin.com/in/timohjheikkila/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://github.com/Timohjh" target="_blank" rel="noopener noreferrer">GitHub</a><a href="tel:+358404198081">Phone</a></div><a href="#top">Back to top ↑</a></div></footer>
+  <script>
+    (() => {
+      const slides = [...document.querySelectorAll('.hero-slide')];
+      const toggle = document.querySelector('.carousel-toggle');
+      let current = 0;
+      let paused = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      let timer;
+
+      const show = (index) => {
+        current = index;
+        slides.forEach((slide, i) => {
+          slide.classList.toggle('is-active', i === current);
+          slide.setAttribute('aria-hidden', String(i !== current));
+        });
+      };
+      const sync = () => {
+        clearInterval(timer);
+        toggle.textContent = paused ? 'Play' : 'Pause';
+        toggle.setAttribute('aria-label', paused ? 'Play image slideshow' : 'Pause image slideshow');
+        if (!paused) timer = setInterval(() => show((current + 1) % slides.length), 4500);
+      };
+      toggle.addEventListener('click', () => { paused = !paused; sync(); });
+      sync();
+    })();
+  </script>
 </body>
 
 </html>
