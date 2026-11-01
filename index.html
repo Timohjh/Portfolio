@@ -40,7 +40,7 @@
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> From Finland · Based in Berlin</p>
+          <p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> Berlin-based Unity developer</p>
           <h1 id="hero-title">Unity developer<br /><em>for games &amp;&nbsp;VR.</em></h1>
           <p class="hero-lede">I take C# gameplay and XR systems from prototype to release, with hands-on experience in performance, multiplayer, and production VR on real hardware.</p>
           <div class="hero-actions">
@@ -84,7 +84,6 @@
               <p class="project-overline">Unity game <span>In development</span></p>
               <h3>The Memphis Chronicles</h3>
               <p>Implemented gameplay systems and production mechanics within a larger game framework, covering feature integration and gameplay refinement. A demo is available on Steam.</p>
-              <ul class="project-detail" aria-label="Contributions"><li>Gameplay systems</li><li>Feature integration</li><li>Steam demo available</li></ul>
               <div class="project-actions"><a href="https://store.steampowered.com/app/4153570/The_Memphis_Chronicles/" target="_blank" rel="noopener noreferrer">View demo on Steam <span aria-hidden="true">↗</span></a></div>
             </div>
           </article>
@@ -180,7 +179,7 @@
       const slides = [...document.querySelectorAll('.hero-slide')];
       const toggle = document.querySelector('.carousel-toggle');
       let current = 0;
-      let paused = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      let paused = false;
       let timer;
 
       const show = (index) => {
